@@ -289,6 +289,7 @@ public class BbsController {
 			// 비밀번호가 틀리다.
 			mv.setViewName("bbs/update");
 			mv.addObject("pwdchk", "fail");
+			bvo.setF_name(bvo2.getF_name());
 			mv.addObject("bvo", bvo);
 			return mv;
 		}

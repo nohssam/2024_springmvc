@@ -332,6 +332,8 @@ public class BoardController {
 			// 비빌번호가 틀린 경우
 			mv.setViewName("board/update");
 			mv.addObject("pwdchk", "fail");
+			// 되돌아 가면 지원진다. 이전 file 이름 넣기 
+			bovo.setF_name(bovo2.getF_name());
 			mv.addObject("bovo", bovo);
 			return mv;
 		}
